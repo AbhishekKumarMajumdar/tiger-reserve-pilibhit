@@ -1,0 +1,898 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Work+Sans:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-five-col {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-six-col {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-seven-col {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-eight-col {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.grid-nine-col {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 2em;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.section {
+  padding: 1rem 4rem;
+}
+
+.container {
+  margin: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.commen-heading {
+  text-align: center;
+  font-size: 4rem;
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgb(98, 189, 252);
+  -webkit-animation: line 5s linear infinite;
+          animation: line 5s linear infinite;
+  transition: all 2.5s linear;
+}
+
+@-webkit-keyframes line {
+  0% {
+    border-bottom: 2px solid rgb(98, 189, 252);
+  }
+  100% {
+    border-bottom: 2px solid #ffa500;
+  }
+}
+
+@keyframes line {
+  0% {
+    border-bottom: 2px solid rgb(98, 189, 252);
+  }
+  100% {
+    border-bottom: 2px solid #ffa500;
+  }
+}
+header {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #adadad;
+}
+header .section {
+  padding: 1rem;
+}
+header .nav .logoNav {
+  display: flex;
+}
+header .nav .logoNav img {
+  height: 6rem;
+  width: 6rem;
+  margin-right: 0.7rem;
+}
+header .nav .logoNav a {
+  font-size: 2.5rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: black;
+}
+header .nav .logoNav p {
+  font-size: 1.5rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: #ffa500;
+  margin-top: 4.5rem;
+  margin-left: -10.5rem;
+}
+header .nav .menuNav ul {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+header .nav .menuNav ul li {
+  padding: 1.5rem;
+  transition: all 0.5s linear;
+}
+header .nav .menuNav ul li:hover {
+  background: -webkit-linear-gradient(50deg, rgb(132, 144, 255) 25%, rgb(98, 189, 252) 100%);
+}
+header .nav .menuNav ul li:hover > a {
+  color: #fff;
+}
+header .nav .menuNav ul a {
+  font-size: 1.5rem;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+}
+header .nav .menuNav .menu-icon, header .nav .menuNav .menu-icon-x {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 3rem;
+  visibility: hidden;
+  opacity: 0;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+main {
+  height: 87vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-animation: imageChange 40s ease infinite;
+          animation: imageChange 40s ease infinite;
+  transition: all 2s linear;
+}
+
+@-webkit-keyframes imageChange {
+  0% {
+    background: url("https://pilibhittigerreserve.in/images/river2.jpg") no-repeat center center/cover;
+  }
+  25% {
+    background: url("https://pilibhittigerreserve.in/images/sun%20(1).jpg") no-repeat center center/cover;
+  }
+  50% {
+    background: url("https://pilibhittigerreserve.in/images/bird2.jpg") no-repeat center center/cover;
+  }
+  75% {
+    background: url("https://pilibhittigerreserve.in/images/DSC_4685.jpg") no-repeat center center/cover;
+  }
+  100% {
+    background: url("https://pilibhittigerreserve.in/images/pil;ibhit.jpg") no-repeat center center/cover;
+  }
+}
+
+@keyframes imageChange {
+  0% {
+    background: url("https://pilibhittigerreserve.in/images/river2.jpg") no-repeat center center/cover;
+  }
+  25% {
+    background: url("https://pilibhittigerreserve.in/images/sun%20(1).jpg") no-repeat center center/cover;
+  }
+  50% {
+    background: url("https://pilibhittigerreserve.in/images/bird2.jpg") no-repeat center center/cover;
+  }
+  75% {
+    background: url("https://pilibhittigerreserve.in/images/DSC_4685.jpg") no-repeat center center/cover;
+  }
+  100% {
+    background: url("https://pilibhittigerreserve.in/images/pil;ibhit.jpg") no-repeat center center/cover;
+  }
+}
+.main-div h3 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: capitalize;
+  word-spacing: 0.5rem;
+}
+
+.main-div h1 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  word-spacing: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-div h1 span {
+  color: rgb(98, 189, 252);
+  margin-left: 2rem;
+}
+
+.main-div p {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.main-div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-div span button {
+  margin-left: 2rem;
+  /* border: none; */
+}
+
+span .learn {
+  border: 2px solid rgb(98, 189, 252);
+  background: transparent;
+}
+span .book {
+  border: none;
+}
+
+header {
+  background: #fff;
+}
+
+.note {
+  height: 3.5rem;
+  background: -webkit-linear-gradient(50deg, rgb(132, 144, 255) 25%, rgb(98, 189, 252) 100%);
+  transition: all 0.5s linear;
+  margin-bottom: 0;
+}
+.note p {
+  color: #fff;
+  line-height: 3.5rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  -webkit-animation: text 25s linear infinite;
+          animation: text 25s linear infinite;
+}
+
+@-webkit-keyframes text {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: -110%;
+  }
+}
+
+@keyframes text {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: -110%;
+  }
+}
+.cartSection .bookingCart, .cartSection .latestUpdate, .cartSection .chukaBook {
+  height: 32rem;
+  margin: 0 2rem;
+}
+.cartSection .bookingCart {
+  background: -webkit-linear-gradient(50deg, rgb(132, 144, 255) 25%, rgb(98, 189, 252) 100%);
+}
+.cartSection .bookingCart table, .cartSection .bookingCart td, .cartSection .bookingCart tr {
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+}
+.cartSection .bookingCart table {
+  margin: 1rem auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+.cartSection .bookingCart h2 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin: 1.5rem 2rem;
+  text-transform: capitalize;
+}
+.cartSection .bookingCart h2 a {
+  font-size: 1.5rem;
+  color: yellow;
+  background: #dc3545;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  -webkit-animation: textColor 0.8s linear infinite;
+          animation: textColor 0.8s linear infinite;
+}
+@-webkit-keyframes textColor {
+  0% {
+    color: yellow;
+  }
+  100% {
+    color: greenyellow;
+  }
+}
+@keyframes textColor {
+  0% {
+    color: yellow;
+  }
+  100% {
+    color: greenyellow;
+  }
+}
+.cartSection .latestUpdate {
+  border: 1px solid black;
+}
+.cartSection .latestUpdate h2 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 2.8rem;
+  padding: 1rem 2rem;
+  background: -webkit-linear-gradient(50deg, rgb(132, 144, 255) 25%, rgb(98, 189, 252) 100%);
+}
+.cartSection .chukaBook {
+  background: -webkit-linear-gradient(50deg, rgb(132, 144, 255) 25%, rgb(98, 189, 252) 100%);
+}
+.cartSection .chukaBook h2 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+.cartSection .chukaBook .know {
+  font-size: 1.5rem;
+  color: yellow;
+  background: #dc3545;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  -webkit-animation: textColor 0.8s linear infinite;
+          animation: textColor 0.8s linear infinite;
+}
+.cartSection .chukaBook table, .cartSection .chukaBook td, .cartSection .chukaBook tr {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+}
+.cartSection .chukaBook table a, .cartSection .chukaBook td a, .cartSection .chukaBook tr a {
+  -webkit-animation: textColor 0.8s linear infinite;
+          animation: textColor 0.8s linear infinite;
+}
+.cartSection .chukaBook table {
+  width: 70%;
+  margin: 3.5rem auto;
+}
+.cartSection .latestUpdate .newsBox {
+  height: 80%;
+  overflow: hidden;
+}
+.cartSection .latestUpdate .newsBox .news {
+  -webkit-animation: news 9s linear infinite;
+          animation: news 9s linear infinite;
+}
+.cartSection .latestUpdate .newsBox .news p {
+  font-size: 1.3rem;
+  color: gray;
+  margin: 0.5rem 1rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+@-webkit-keyframes news {
+  0% {
+    margin-top: 100%;
+  }
+  50% {
+    margin-top: 50%;
+  }
+  75% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: -50%;
+  }
+}
+@keyframes news {
+  0% {
+    margin-top: 100%;
+  }
+  50% {
+    margin-top: 50%;
+  }
+  75% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: -50%;
+  }
+}
+
+.section1 {
+  margin: 10rem 0;
+}
+.section1 .container .text {
+  padding-left: 4rem;
+}
+.section1 .container .text .commen {
+  font-size: 3rem;
+  color: -webkit-linear-gradient(50deg, rgb(132, 144, 255) 25%, rgb(98, 189, 252) 100%);
+  margin-bottom: 2rem;
+}
+.section1 .container .text p {
+  font-size: 1.4rem;
+  color: rgb(105, 102, 102);
+  word-spacing: 0.2rem;
+}
+.section1 .container .picture {
+  width: 35rem;
+  height: 35rem;
+  margin: 2.5rem 14rem;
+  position: relative;
+  box-shadow: 10px 10px 64px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 64px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 64px 0px rgba(0, 0, 0, 0.75);
+}
+.section1 .container .picture::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -1rem;
+  top: -1rem;
+  z-index: -1;
+  background: rgb(98, 189, 252);
+}
+.section1 .container .picture img {
+  width: 100%;
+  height: 100%;
+}
+.section1 .container .picture .second-img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.happy {
+  height: 12rem;
+  margin-top: -6rem;
+  background: -webkit-linear-gradient(50deg, rgb(132, 144, 255) 25%, rgb(98, 189, 252) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.happy .visiter, .happy .booking, .happy .review {
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+.happy .visiter p, .happy .booking p, .happy .review p {
+  font-size: 1.5rem;
+  word-spacing: 0.4rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 1.3rem 3rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.2s linear;
+  background: -webkit-linear-gradient(0deg, rgb(132, 144, 255) 0%, rgb(98, 189, 252) 100%);
+}
+.btn:hover {
+  box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.3);
+  transform: translateY(-1.2rem);
+}
+
+.gellery {
+  height: 70.2rem;
+  overflow: hidden;
+}
+.gellery .p-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 2rem;
+}
+.gellery .pictures {
+  margin: 3rem 0rem;
+}
+.gellery .pictures .img-overlay {
+  width: 30rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+  margin: 2rem 1rem;
+}
+.gellery .pictures .img-overlay .img-overlay, .gellery .pictures .img-overlay .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(50deg, rgb(132, 144, 255) 25%, rgb(98, 189, 252) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: all 0.3s linear;
+  border-radius: 7px;
+  flex-direction: column;
+}
+.gellery .pictures .img-overlay:hover > .overlay {
+  transform: translateY(0);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.gellery .pictures .img-overlay .overlay i {
+  font-size: 3rem;
+  color: #fff;
+}
+.gellery .pictures img {
+  width: 32rem;
+  height: 27rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  margin-top: 2rem;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-clint-msg {
+  padding: 5rem 8rem;
+  background: var(--white);
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+}
+
+.swiper-clint-msg p {
+  font-size: 1.5rem;
+  max-width: 90rem;
+  color: gray;
+}
+
+.swiper-clint-msg p::after {
+  content: "\f10d";
+  position: absolute;
+  top: 4rem;
+  left: 3rem;
+  font-family: "Font Awesome 6 Free";
+  font-size: 4rem;
+  font-weight: 900;
+  color: #70717c;
+}
+
+.swiper-clint-msg p::before {
+  content: "\f10e";
+  position: absolute;
+  bottom: 3rem;
+  right: 17rem;
+  font-family: "Font Awesome 6 Free";
+  font-size: 4rem;
+  font-weight: 900;
+  color: #70717c;
+}
+
+.swiper-clint img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border: 0.5rem solid var(--helper-tint);
+}
+
+.freelancing-section {
+  background: url("../img/bg.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+  transition: all 0.7s linear;
+}
+
+.freelancing-section .overlay {
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(50deg, rgb(132, 144, 255) 25%, rgb(98, 189, 252) 100%);
+  opacity: 0.7;
+}
+
+.freelancing-section .container {
+  position: relative;
+}
+
+.freelancing-section h2 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.freelancing-section span {
+  color: yellow;
+}
+
+.freelancing-section p {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.map {
+  padding: 0 5rem;
+}
+.map .box {
+  margin: 4rem 2rem;
+  height: 30rem;
+  box-shadow: 0px 0px 31px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+}
+.map .link-map h3 {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+.map .link-map p {
+  margin-left: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+.map .link-map a {
+  margin-left: 3rem;
+  font-size: 1.7rem;
+}
+
+.footer-section {
+  background: #212529;
+  transition: all 0.7s linear;
+  padding-top: 2rem;
+}
+
+.footer-section h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ffa500;
+}
+
+.f-about p {
+  color: #adadad;
+  font-size: 1.5rem;
+}
+
+.f-links ul, .f-service ul, .f-address address {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  font-size: 1.3rem;
+  justify-content: center;
+  color: #adadad;
+}
+
+.f-links span, .f-service span, .f-address span {
+  margin-right: 1rem;
+  color: #adadad;
+}
+
+.f-address p, .f-address p a {
+  font-style: none;
+  color: #adadad;
+  font-size: 1.5rem;
+}
+
+.f-icons {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.f-icons a {
+  color: #adadad;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.f-credit {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #adadad;
+}
+
+footer a:hover, footer a:active {
+  color: #fff;
+}
+
+.f-links ul {
+  padding-left: 2rem;
+}
+.f-links ul li {
+  text-transform: capitalize;
+}
+
+.f-links, .f-about, .f-address {
+  margin-left: 5rem;
+}
+
+.p-image-not-active {
+  display: none;
+}
+
+.f-address i {
+  margin-right: 1rem;
+}
+.f-address span {
+  padding: 1rem 0rem;
+  display: flex;
+  gap: 3rem;
+}
+.f-address span i {
+  font-size: 2rem;
+}
+.f-address span i:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.f-address #google_translate_element {
+  margin-top: 1rem;
+}
+
+.f-links i {
+  margin-right: 1rem;
+}
+
+.main-content {
+  position: relative;
+}
+.main-content::before {
+  content: "";
+  width: 100vw;
+  height: 102.5%;
+  top: -10rem;
+  left: 0;
+  position: absolute;
+  background: url("../img/bg.jpg") no-repeat center center/cover;
+  opacity: 0.2;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.mobile-navbar-icon {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.mobile-navbar-icon .menu-icon-x {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  header {
+    border: 3px solid red;
+    position: relative;
+  }
+  header .mobile-navbar-icon {
+    display: block;
+    color: #000;
+    border: 2px solid #000;
+  }
+  header .mobile-navbar-icon .menu-icon, header .mobile-navbar-icon .menu-icon-x {
+    width: 5rem;
+    height: 5rem;
+    font-size: 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
